@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, WebVR! - A-Frame</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="//unpkg.com/aframe-environment-component@1.0.0/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-entity environment="preset: osiris ;"></a-entity>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="3.5" color="#FFC65D" shadow></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="2 " height="7" color="#7BC8A4" shadow></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+      
+            <a-entity>
+                <a-box position="-1 0.5 -4" rotation="0 45 0" color="black"></a-box>
+                <a-sound src="src: url(https://ia802705.us.archive.org/24/items/OceanSound-NatureSounds/08Ocean_64kb.mp3)" autoplay="true" position="-1 0.5 -3" volume="1" loop="true"></a-sound>
+                <a-animation attribute="rotation"
+                             dur="10000"
+                             fill="forwards"
+                             to="0 360 0"
+                             repeat="indefinite">
+
+                </a-animation>
+        </a-entity>
+      
+      
+    </a-scene>
+  </body>
+</html>
